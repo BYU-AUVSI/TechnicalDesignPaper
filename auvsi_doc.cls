@@ -25,6 +25,15 @@
 \usepackage{tabularx}
 \usepackage{tabu} % for different font sizes in each row
 
+% Make section heading font size smaller
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{15}\selectfont}
+% Decrease section heading padding
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{.2ex plus 1ex minus .2ex}{.2ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{.2ex plus 1ex minus .2ex}{.2ex plus .2ex}
 
 \usepackage{datetime}
 \newdateformat{specialdate}{\twodigit{\THEMONTH}-\twodigit{\THEDAY}-\THEYEAR}
@@ -69,8 +78,8 @@
 \usepackage{longtable}
 
 % Section Formatting
-\renewcommand{\thesection}{\Roman{section}} 
-\renewcommand{\thesubsection}{\Alph{subsection}}
+% \renewcommand{\thesection}{\Roman{section}} 
+% \renewcommand{\thesubsection}{\Alph{subsection}}
 
 % Arguments (defaults and keys)
 % \RequirePackage{xkeyval}
